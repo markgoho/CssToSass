@@ -1,0 +1,173 @@
+@media (min-width: 768px) {
+
+	header {
+		padding-bottom: 40px;
+		margin-bottom: 50px;
+	}
+
+	.header-name {
+		padding-bottom: 5px;
+	}
+
+	.header-navigation li {
+		width: 15%;
+		display: inline-block;
+		background-color: #fafafa;
+	}	
+
+	.header-navigation {
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	.personal-info {
+		width: 92%;
+		margin: 0 auto;
+	}
+
+	.about-me {
+		margin-top: 0;
+		width: 60%;
+		float: left;
+		padding-bottom: 0;
+		text-align: left;
+		font-size: 1.25em;
+	}
+
+	.profile-img {
+		width: 39%;
+		float: right;
+	}
+
+	.portfolio-cards {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.card {
+		flex-basis: 48%;
+	}
+
+	.skills-list li {
+		flex-basis: 32%;
+	}
+
+	.small-footer-nav {
+		display: none;
+	}
+
+	.large-footer-nav {
+		width: 90%;
+		display: flex;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		padding-top: 25px;
+		justify-content: space-between;
+		font-weight: 700;
+	}
+
+	.large-footer-nav li {
+		list-style: none;
+	}
+
+	.large-footer-name {
+		margin-right: auto;
+	}
+
+	.large-footer-nav li:nth-child(n+2) {
+		text-transform: uppercase;
+		margin-left: 20px;
+	}
+
+	.video {
+		margin: 0 auto;
+	}
+
+	
+
+}
+
+@media (min-width: 1024px) {
+	
+	/* * {
+		border: 1px solid red;
+	} */
+
+	a:hover {
+	color: #36acd0;
+	}
+	
+	a:visited {
+		color: black;
+	}
+
+	body {
+		margin: 0 auto;
+		max-width: 1024px;
+		background-color: #fafafa;
+	}
+
+	header {
+		padding-bottom: 0;
+	}
+
+	.top-info {
+		width: 92%;
+		margin: 40px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+
+	.header-navigation {
+		padding-bottom: 0;
+	}
+
+	.header-navigation li {
+		padding: 0;
+		margin: 0;
+		width: auto;
+	}
+
+	.header-navigation li:nth-child(n+2) {
+		margin-left: 20px;
+	}
+
+	.header-name {
+		padding-top: 0;
+		margin-right: auto;
+	}
+
+	.about-me {
+		font-size: 1.5em;
+	}
+
+	#portfolio {
+		width: 100%;
+		background-color: white;
+	}
+
+	.portfolio-title {
+		padding-top: 25px;
+	}
+
+	.portfolio-cards {
+		margin: 0 auto;
+		width: 92%;
+	}
+
+	.card {
+		flex-basis: 32%;
+	}
+
+	.skills-list li {
+		flex-basis: 23%;
+	}
+
+	.video {
+		margin: 0;
+	}
+
+}
