@@ -1,0 +1,13 @@
+//Media query mixins
+
+@mixin tablet {
+  @media #{$brk-narrow}{
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$brk_wide} {
+    @content;
+  }
+}

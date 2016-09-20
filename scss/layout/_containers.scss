@@ -11,99 +11,108 @@
 	justify-content: space-between;
 }
 
-.profile-img {
-	margin: 0 auto;
-	width: 62.5%;
-	background-color: #2472aa;
-}
-
-.headshot {
-	width: 50%;
-	display: block;
-	margin: 0 auto;
-	padding: 10px 0;
-}
-
-
-.about-me {
-	width: 90%;
-	margin: 30px auto 0 auto;
-	padding-bottom: 42px;
-	font-size: 1.15em;
-}
-
 .section-header {
 	padding-top: 50px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-#portfolio, .about-me {
-	text-align: center;
-}
-
 #portfolio {
+	text-align: center;
 	width: 90%;
 	margin: 0 auto;
 	margin-top: 50px;
+
+	@include desktop {
+		width: 100%;
+		background-color: white;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		font-size: 1.35em;
+		padding-bottom: 50px;
+	}
+
+	h3 {
+		font-size: 1.5em;
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	div {
+		margin-bottom: 50px;
+	}
+
+	div p {
+		margin: 0 auto;
+		width: 93%;
+		font-size: 1.07em;
+	}
 }
 
-#portfolio img {
-	width: 100%;
+
+
+.portfolio-cards {
+	@include tablet {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	@include desktop {
+		margin: 0 auto;
+		width: 92%;
+	}
+
 }
 
-#portfolio h2 {
-	text-transform: uppercase;
-	font-size: 1.35em;
-	padding-bottom: 50px;
+.portfolio-title {
+	@include desktop {
+		padding-top: 25px;
+	}
 }
 
-#portfolio h3 {
-	font-size: 1.5em;
-	padding-top: 30px;
-	padding-bottom: 15px;
+.card {
+	@include tablet {
+		flex-basis: 48%;
+	}
+
+	@include desktop {
+		flex-basis: 32%;
+	}
 }
 
-#portfolio div {
-	margin-bottom: 50px;
-	/* border: 1px solid red; */
-}
+.video {
+	@include tablet {
+		margin: 0 auto;
+	}
 
-#portfolio div p {
-	margin: 0 auto;
-	width: 93%;
-	font-size: 1.07em;
+	@include desktop {
+		margin: 0;
+	}
 }
-
 
 
 .skills-list li {
 	border-radius: 7px;
-	font-size: 1.5em;
+
 	text-align: center;
 	padding: 20px 5px;
 	background-color: #675a85;
 	list-style: none;
 	flex-basis: 48%;
-	color: white;
-	font-weight: 700;
 	margin-bottom: 10px;
+
+	@include tablet {
+		flex-basis: 32%;
+	}
+
+	@include desktop {
+		flex-basis: 23%;
+	}
 }
-
-
-
-.contact {
-	width: 90%;
-	margin: 0 auto;
-	border-bottom: 1px solid #e7e7e7;
-	font-size: 1.15em;
-	padding-bottom: 20px;
-}
-
-.contact p {
-	margin-bottom: 35px;
-}
-
 
 
 

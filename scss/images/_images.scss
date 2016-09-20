@@ -1,0 +1,14 @@
+.profile-img {
+	margin: 0 auto;
+	width: 62.5%;
+	background-color: #2472aa;
+
+	@include tablet {
+		width: 39%;
+		float: right;
+	}
+}
+
+#portfolio img {
+	width: 100%;
+}

@@ -2,19 +2,24 @@ footer {
 	margin-top: 25px;
 	text-align: center;
 	background-color: #fafafa;
-}
 
-footer h2 {
-	padding-top: 63px;
-	padding-bottom: 40px;
-	font-size: 1.15em;
-	text-transform: uppercase;
+	h2 {
+		padding-top: 63px;
+		padding-bottom: 40px;
+		font-size: 1.15em;
+		text-transform: uppercase;
+	}
 }
 
 .small-footer-nav {
+	@extend %clearfix;
 	width: 90%;
 	margin: 0 auto;
 	font-weight: 700;
+
+	@include tablet {
+		display: none;
+	}
 }
 
 .footer-name {
@@ -24,4 +29,46 @@ footer h2 {
 
 .large-footer-nav {
 	display: none;
+
+	@include tablet {
+		width: 90%;
+		display: flex;
+		margin: 0 auto;
+		padding-bottom: 50px;
+		padding-top: 25px;
+		justify-content: space-between;
+		font-weight: 700;
+	}
+
+	& li {
+		@include tablet {
+			list-style: none;
+		}
+	}
+
+	& li:nth-child(n+2) {
+		@include tablet {
+			text-transform: uppercase;
+			margin-left: 20px;
+		}
+	}
+}
+
+.large-footer-name {
+	@include tablet {
+		margin-right: auto;	
+	}
+	
+}
+
+.contact {
+	width: 90%;
+	margin: 0 auto;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 1.15em;
+	padding-bottom: 20px;
+
+	p {
+		margin-bottom: 35px;
+	}
 }
