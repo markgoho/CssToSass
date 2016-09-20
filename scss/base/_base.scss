@@ -11,11 +11,3 @@ body {
 		background-color: #{$desktop-body-color};	
 	}
 }
-
-%clearfix {
-	&::after {
-		content: "";
-		display: table;
-		clear: both;	
-	}
-}

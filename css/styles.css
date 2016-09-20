@@ -1,3 +1,12 @@
+header::after, .personal-info::after, .small-footer-nav::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.headshot {
+  display: block;
+  margin: 0 auto; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,11 +17,6 @@
     margin: 0 auto;
     max-width: 1024px;
     background-color: #fafafa; } }
-
-header::after, .personal-info::after, .small-footer-nav::after {
-  content: "";
-  display: table;
-  clear: both; }
 
 body {
   font-family: 'Asap', 'Helvetica', sans-serif; }
@@ -106,8 +110,6 @@ header {
 
 .headshot {
   width: 50%;
-  display: block;
-  margin: 0 auto;
   padding: 10px 0; }
 
 .about-me {
