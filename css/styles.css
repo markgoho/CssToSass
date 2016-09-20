@@ -135,19 +135,21 @@ header {
 
 .open div {
   margin: 0 auto;
-  width: 0;
   height: 0;
+  width: 0;
+  content: '';
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-bottom: 12px solid black; }
 
 .closed div {
   margin: 0 auto;
-  width: 0;
   height: 0;
-  border-left: 12px solid transparent;
+  width: 0;
+  content: '';
+  border-top: 12px solid black;
   border-right: 12px solid transparent;
-  border-top: 12px solid black; }
+  border-left: 12px solid transparent; }
 
 #skills {
   background-color: #ededed;
