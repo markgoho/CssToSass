@@ -1,0 +1,150 @@
+header {
+	@extend %clearfix;
+	background-color: #fafafa;
+	width: 100%;
+	margin: 0;
+
+	@include tablet {
+		padding-bottom: 40px;
+		margin-bottom: 50px;	
+	}
+
+	@include desktop {
+		padding-bottom: 0;
+	}
+}
+
+.top-info {
+	@include desktop {
+		width: 92%;
+		margin: 40px auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
+}
+
+.header-name {
+	text-align: center;
+	margin-top: 0;
+	padding: 30px 0;
+	font-size: 2em;
+	font-weight: 800;
+	@include tablet {
+		padding-bottom: 5px;
+	}
+
+	@include desktop {
+		padding-top: 0;
+		margin-right: auto;
+	}
+}
+
+.navigation {
+	border: 5px solid red;
+	margin-bottom: 28px;
+}
+
+
+.header-navigation {
+	@include tablet {
+		text-align: center;
+		padding-bottom: 15px;
+		}
+
+	@include desktop {
+		padding-bottom: 0;
+	}
+
+	li {
+		font-size: 1em;
+		background-color: white;
+		padding: 15px 0;
+		list-style: none;
+		text-align: center;
+		width: 90%;
+		margin: 16px auto;
+		text-transform: uppercase;
+		font-weight: 700;
+		@include tablet {
+			width: 15%;
+			display: inline-block;
+			background-color: #fafafa;
+		}
+		@include desktop {
+			padding: 0;
+			margin: 0;
+			width: auto;
+		}
+	}
+
+	li:nth-child(n+2) {
+		@include desktop {
+			margin-left: 20px;
+		}
+	}
+
+	li:nth-child(1) {
+		@include tablet {
+			display: none;
+		}
+	}
+}
+
+.headshot {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.about-me {
+	width: 90%;
+	margin: 30px auto 0 auto;
+	padding-bottom: 42px;
+	font-size: 1.15em;
+	text-align: center;
+
+	@include tablet {
+		margin-top: 0;
+		width: 60%;
+		float: left;
+		padding-bottom: 0;
+		text-align: left;
+		font-size: 1.25em;
+	}
+
+	@include desktop {
+		font-size: 1.5em;
+	}
+}
+
+.personal-info {
+	@extend %clearfix;
+	@include tablet {
+		width: 92%;
+		margin: 0 auto;
+	}
+}
+
+.open {
+	div {
+		margin: 0 auto;
+		width: 0; 
+	  	height: 0; 
+	 	border-left: 12px solid transparent;
+	  	border-right: 12px solid transparent;
+	  	border-bottom: 12px solid black;
+	  }
+}
+
+.closed {
+	div {
+		margin: 0 auto;
+		width: 0; 
+	  	height: 0; 
+	 	border-left: 12px solid transparent;
+	  	border-right: 12px solid transparent;
+	  	border-top: 12px solid black;
+	  }
+}
